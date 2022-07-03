@@ -1,0 +1,374 @@
+/*Global Css For EduTech*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 1s;
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    color: white;
+}
+/*Styling Header Of Website Starts From Here*/
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(to right, blueviolet, purple);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.logo span{
+    font-family: cursive;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.menu-barY{
+    cursor: pointer;
+    font-size: 2.3rem;
+    transform: translateY(-3px);
+}
+.menu-barX{
+    cursor: pointer;
+    font-size: 2.3rem;
+    transform: translate(-3px, -3px);
+    display: none;
+}
+/*Styling Header Of Website Ends From Here*/
+/*Styling Header Nav-Links Of Website Starts From Here*/
+.nav-links{
+    width: 300px;
+    height: 300px;
+    background: white;
+    padding: 10px;
+    backdrop-filter: blur(40px);
+    border: 4px solid blueviolet;
+    border-radius: 14px;
+    float: right;
+    margin-top: 66px;
+    margin-right: 10px;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+.nav-links ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.nav-links ul a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, blueviolet, purple);
+    color: white;
+    margin-top: 10px;
+    border-radius: 35px;
+}
+.nav-links ul a:hover{
+    background: white;
+    color: #000;
+    border-radius: 0px;
+}
+/*Styling Header Nav-Links Of Website Ends From Here*/
+/*Styling Home Page Starts From Here*/
+.homepage{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    z-index: -1;
+}
+.info{
+    padding: 10px;
+}
+.info h1{
+    font-size: 5rem;
+    font-weight: 900;
+}
+.info span{
+    font-family: cursive;
+}
+.info button{
+    padding: 10px 20px;
+    background: linear-gradient(to right, blueviolet, purple);
+    color: white;
+    border: none;
+    border-radius: 34px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.info button:hover{
+    background: white;
+    color: #000;
+}
+.search-bar{
+    padding: 10px;
+}
+.search-bar input{
+    padding: 10px 20px;
+    width: 80%;
+    background: transparent;
+    backdrop-filter: blur(90px);
+    outline: 1px solid transparent;
+    border: 1px solid white;
+    color: white;
+}
+.search-bar button{
+    padding: 10px 20px;
+    background: linear-gradient(to right, blueviolet, purple);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-bar button:hover{
+    background: white;
+    color: #000;
+}
+@media only screen and (max-width: 768px){
+    .info h1{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .info h2{
+        font-size: 1rem;
+    }
+    .search-bar input{
+        padding: 10px 20px;
+        width: 60%;
+        background: transparent;
+        backdrop-filter: blur(90px);
+        outline: 1px solid transparent;
+        border: 1px solid white;
+        color: white;
+    }
+    .search-bar button{
+        padding: 10px 20px;
+        background: linear-gradient(to right, blueviolet, purple);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
+/*Styling Home Page Ends From Here*/
+/*Styling Courses Page Starts From Here*/
+
+
+.coursepage h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 95px;
+}
+.coursepage{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    z-index: -1;
+}
+.course-card{
+    width: 200px;
+    height: 310px;
+    border: 1px solid white;
+    background: linear-gradient(to top, #380036, #0cbaba);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.course-card:hover{
+    transform: translateY(-20px);
+}
+.course-card img{
+    width: 200px;
+    height: 200px;
+}
+.course-card h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.course-card button{
+    padding: 10px 20px;
+    background: linear-gradient(to right, blueviolet, purple);
+    color: white;
+    border: none;
+    border-radius: 35px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.course-card button:hover{
+    background: white;
+    color: #000;
+}
+@media only screen and (max-width: 768px){
+    #courses{
+        height: 230vh;
+    }
+    .coursepage{
+        padding: 10px;
+    }
+    .course-card{
+        width: 100%;
+        height: auto;
+    }
+    .course-card img{
+        width: 100%;
+        height: auto;
+    }
+    .course-card button{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+/*Styling Courses Page Ends From Here*/
+/*Styling Events Page Starts From Here*/
+.event-page{
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    z-index: -1;
+    background: linear-gradient(to right, blueviolet, purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*Styling Events Page Ends From Here*/
+/*Styling About Page Starts From Here*/
+.aboutpage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+.author{
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.author img{
+    width: 400px;
+    height: 500px;
+    border-radius: 23px;
+}
+.auth-info{
+    padding: 10px;
+    overflow: hidden;
+    transform: translateX(-70px);
+}
+.auth-info h2{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.auth-info h4{
+    font-size: 2rem;
+    font-weight: bold;
+    color: blueviolet;
+}
+.auth-info p{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.auth-info p::first-letter{
+    font-size: 2rem;
+    font-family: cursive;
+    color: #0cbaba;
+}
+.auth-info button{
+    padding: 10px 40px;
+    background: linear-gradient(to right, blueviolet, purple);
+    color: white;
+    border: none;
+    border-radius: 35px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.auth-info button:hover{
+    background: white;
+    color: #000;
+}
+@media only screen and (max-width: 768px){
+    .aboutpage{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .auth-info{
+        transform: translateX(0px);
+    }
+}
+/*Styling About Page Ends From Here*/
+/*Styling Contact Page Starts From Here*/
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    padding: 10px;
+    z-index: -1;
+}
+.contact-page h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.contact-page input{
+    padding: 10px 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+}
+.contact-page textarea{
+    padding: 10px 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+}
+.contact-page button{
+    padding: 10px 20px;
+    background: linear-gradient(to right, blueviolet, purple);
+    color: white;
+    border: none;
+    border-radius: 35px;
+    margin-top: 2px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.contact-page button:hover{
+    background: white;
+    color: #000;
+}
+/*Styling Contact Page Ends From Here*/
+/*Styling Footer Section Starts From Here*/
+.copyright{
+    padding: 10px;
+    background: linear-gradient(to right, blueviolet, purple);
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+.copyright a{
+    color: white;
+}
+/*Styling Footer Section Ends From Here*/
